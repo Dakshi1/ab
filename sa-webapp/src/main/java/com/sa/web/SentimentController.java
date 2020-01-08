@@ -40,8 +40,11 @@ public class SentimentController {
     @PostMapping("/bank-2")
     public String bank1() {
     	String url = "http://edition.cnn.com/politics";
-    	HttpEntity<Map<String, String>> request = new HttpEntity<>(map, headers);
-        RestTemplate restTemplate=new RestTemplate();
+    	HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        Map<String,String> map=new HashMap<String, String>();
+    	HttpEntity<Map<String, String>> request = new HttpEntity<>(map, request, headers);
+    	RestTemplate restTemplate=new RestTemplate();
         ResponseEntity<String> response = restTemplate.postForEntity(url, String.class);
         return "Response from cnn: ("+response.getBody() + ")";
     }
