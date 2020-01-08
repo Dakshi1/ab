@@ -63,8 +63,8 @@ public class SentimentController {
         String card = payload.get("card");
         if(card.equalsIgnoreCase("CC"))
         {
-                //String url = "http://104.198.70.81/api/payment/print-me";
-        		String url = "http://edition.cnn.com/politics";
+                String url = "http://104.198.70.81/api/payment/print-me";
+        		//String url = "http://edition.cnn.com/politics";
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_JSON);
                 headers.set("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik5VSTFNRVpHT1RreE5VRXpOalZDTUVSR1FqRkRPVUZDUmtOQk1qUXpOekV4TlVaQlFrWTVPUSJ9.eyJpc3MiOiJodHRwczovL2Rldi05cWxidXBuMy5hdXRoMC5jb20vIiwic3ViIjoiWjlSVmg0Y2NBdTFWUkFFR2pHQlNJZExPeWs1OHQ0cGJAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vc2VudGltZW50LWFuYWx5c2lzLmlvIiwiaWF0IjoxNTc4NDY0OTg2LCJleHAiOjE1Nzg1NTEzODYsImF6cCI6Ilo5UlZoNGNjQXUxVlJBRUdqR0JTSWRMT3lrNTh0NHBiIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.t-9qCL9BppUGeqZpRGp8K5pmFj47huQbbvL9z6xRGc91lZdbufsmu_0Hhn69zkzGGVXv-MS8lPRZQSnLi63UPOdOPNGhT6rUMOgAZhtcJ5PSce3gT5zr6tTeKjeyg9OgNK6B59HLyu8K_xIg8BjR_bcB6xEDtjmLYBx9zA0fiYep6zL4v0e8GKLt6AGhls2Fe7n0sxPc2BMZpdCPFtgNSHrpnXE7OzYxqMq-myeKltEQyWK8tDFPikKPPNnnnwOm2PIUahJuB3chkAl5bNqzTR2VYt9R_qi6YM8RQpJMISikwNWwt_mycBSk0v5yTDMtXPk_eqDkJB0qdNOn7CfGCw");
