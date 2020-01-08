@@ -37,6 +37,14 @@ public class SentimentController {
     /**
     * POST bank1
     */
+    @PostMapping("/bank-2")
+    public String bank1() {
+    	String url = "http://edition.cnn.com/politics";
+    	HttpEntity<Map<String, String>> request = new HttpEntity<>(map, headers);
+        RestTemplate restTemplate=new RestTemplate();
+        ResponseEntity<String> response = restTemplate.postForEntity();
+        return "Response from cnn: ("+response.getBody() + ")";
+    }
     @PostMapping("/bank-1")
     public String bank1(@RequestBody Map<String,String> payload) {
         String card = payload.get("card");
