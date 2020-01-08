@@ -42,10 +42,10 @@ public class SentimentController {
         String card = payload.get("card");
         if(card.equalsIgnoreCase("CC"))
         {
-                String url = "http://35.193.37.248/api/payment/network";
+                String url = "http://104.198.70.81/api/payment/print-me";
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_JSON);
-                headers.set("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik5VSTFNRVpHT1RreE5VRXpOalZDTUVSR1FqRkRPVUZDUmtOQk1qUXpOekV4TlVaQlFrWTVPUSJ9.eyJpc3MiOiJodHRwczovL2Rldi05cWxidXBuMy5hdXRoMC5jb20vIiwic3ViIjoiWjlSVmg0Y2NBdTFWUkFFR2pHQlNJZExPeWs1OHQ0cGJAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vc2VudGltZW50LWFuYWx5c2lzLmlvIiwiaWF0IjoxNTc2NjU1MDA4LCJleHAiOjE1NzY3NDE0MDgsImF6cCI6Ilo5UlZoNGNjQXUxVlJBRUdqR0JTSWRMT3lrNTh0NHBiIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.t3zr4SPajaTYV-UvsFtX-VktMTQJSloKTsqOoELL0uTcCXy7AKvuEt3fGR_uqfVt42x_4HNQEDXorBk_pv-qyVzKWebYczw9zyyoDvo-iwZrGR3R1fRTQLPieatXpkGmLyTslkDgkHOjTS7Bl8qb1DowqpW3Ve0Rygw-q2P7QlkfN_JorrWowHFZG1dHcx6-QGbl_Ptw3mB9N8d53yoj8-Jpf-yLEQFDNevbVZlH1cUPbCx9RsZiW_hbn5S47BVY9C_nNk1PZGfCpBdgJwEOZJ65mxIcWQgygmbqRKFSXO1uEU5ldWi0YWpbJfBlWlRjrg7Uuua-J3O4xd58lNnpQQ");
+                headers.set("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik5VSTFNRVpHT1RreE5VRXpOalZDTUVSR1FqRkRPVUZDUmtOQk1qUXpOekV4TlVaQlFrWTVPUSJ9.eyJpc3MiOiJodHRwczovL2Rldi05cWxidXBuMy5hdXRoMC5jb20vIiwic3ViIjoiWjlSVmg0Y2NBdTFWUkFFR2pHQlNJZExPeWs1OHQ0cGJAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vc2VudGltZW50LWFuYWx5c2lzLmlvIiwiaWF0IjoxNTc4NDY0OTg2LCJleHAiOjE1Nzg1NTEzODYsImF6cCI6Ilo5UlZoNGNjQXUxVlJBRUdqR0JTSWRMT3lrNTh0NHBiIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.t-9qCL9BppUGeqZpRGp8K5pmFj47huQbbvL9z6xRGc91lZdbufsmu_0Hhn69zkzGGVXv-MS8lPRZQSnLi63UPOdOPNGhT6rUMOgAZhtcJ5PSce3gT5zr6tTeKjeyg9OgNK6B59HLyu8K_xIg8BjR_bcB6xEDtjmLYBx9zA0fiYep6zL4v0e8GKLt6AGhls2Fe7n0sxPc2BMZpdCPFtgNSHrpnXE7OzYxqMq-myeKltEQyWK8tDFPikKPPNnnnwOm2PIUahJuB3chkAl5bNqzTR2VYt9R_qi6YM8RQpJMISikwNWwt_mycBSk0v5yTDMtXPk_eqDkJB0qdNOn7CfGCw");
                 Map<String,String> map=new HashMap<String, String>();
                 map.put("status","accept");
                 HttpEntity<Map<String, String>> request = new HttpEntity<>(map, headers);
