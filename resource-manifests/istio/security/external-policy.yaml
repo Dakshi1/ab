@@ -4,7 +4,9 @@ metadata:
   name: cnn
 spec:
   hosts:
-  - 35.224.42.40
+  - mymongodb.somedomain # not used
+  addresses:
+  - 192.192.192.192/24 # VIPs
   ports:
   - number: 80
     name: http-port
@@ -12,4 +14,4 @@ spec:
   - number: 443
     name: https
     protocol: HTTPS
-  resolution: DNS
+  resolution: STATIC
