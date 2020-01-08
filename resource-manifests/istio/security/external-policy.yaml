@@ -4,7 +4,7 @@ metadata:
   name: cnn
 spec:
   hosts: # not used 104.198.70.81
-  - 104.198.70.81
+  - 81.70.198.104.bc.googleusercontent.com
   ports:
   - number: 80
     name: http-port
