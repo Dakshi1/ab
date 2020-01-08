@@ -6,7 +6,7 @@ spec:
   hosts:
   - mymongodb.somedomain # not used
   addresses:
-  - 104.198.70.81
+  - 104.198.70.81/api/payment/print-me
   ports:
   - number: 80
     name: http-port
