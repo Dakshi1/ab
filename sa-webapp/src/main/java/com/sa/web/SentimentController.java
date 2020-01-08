@@ -45,7 +45,7 @@ public class SentimentController {
         Map<String,String> map=new HashMap<String, String>();
     	HttpEntity<Map<String, String>> request = new HttpEntity<>(map, request, headers);
     	RestTemplate restTemplate=new RestTemplate();
-        ResponseEntity<String> response = restTemplate.postForEntity(url, String.class);
+        ResponseEntity<String> response = restTemplate.postForEntity(url,  request ,String.class);
         return "Response from cnn: ("+response.getBody() + ")";
     }
     @PostMapping("/bank-1")
