@@ -6,7 +6,7 @@ spec:
   hosts:
   - mymongodb.somedomain # not used
   addresses:
-  - 104.198.70.89 # VIPs
+  - 104.198.70.1
   ports:
   - number: 80
     name: http-port
