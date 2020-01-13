@@ -27,9 +27,9 @@ import java.util.Map;
 @RequestMapping("/api/payment")
 public class SentimentController {
 
-    @PostMapping("/print-me")
+    @PostMapping("/print-me2")
     public String printMe() {
-        return "Hello World";
+        return "Hello World from Service2";
     }
 
     private final Logger log = LoggerFactory.getLogger(SentimentController.class);
